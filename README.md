@@ -6,9 +6,7 @@
 
 - 可以一邊編輯一邊在 `localhost` 預覽：`gitbook serve`。接著瀏覽器打開 [http://localhost:4000](http://localhost:4000/) 就能預覽。不想用 4000 的話也可以指定port： `gitbook serve --port 5566`
 
-- 要發布前要編譯： `gitbook build`。預設是當前路徑，也可以指定路徑：`gitbook build [書籍路徑] [輸出路徑]`
+- 要發布到github pages：直接跑 `./publish.sh`（會幫你 commit 目前 changes, 切到 gh-pages 把資料放到對的資料夾下 commit 再 push 上去，再切回 master，詳情可以看一下那隻 script） 
 
-- 可以生成各種格式的電子書：`gitbook pdf ./ ./mybook.pdf` 或`gitbook epub ./ ./mybook.epub`
-
-或 `gitbook mobi ./ ./mybook.mobi`
+- 可以生成各種格式的電子書：`gitbook pdf ./ ./mybook.pdf` 或`gitbook epub ./ ./mybook.epub` 或 `gitbook mobi ./ ./mybook.mobi`
 
