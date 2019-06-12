@@ -6,13 +6,13 @@
 
 **原理**：如果某個項集是頻繁的，那麼它的所有子集也是頻繁的。該定理的逆反定理爲：如果某一個項集是非頻繁的，那麼它的所有超集（包含該集合的集合）也是非頻繁的。
 
-![image-20190423141432305](/Users/Apple/Library/Application Support/typora-user-images/image-20190423141432305.png)
+![圖的標題1](./images/image-20190423141432305.png)
 
 ### Redundant Rules
 
-![image-20190423125410014](/Users/Apple/Library/Application Support/typora-user-images/image-20190423125410014.png)
+![圖的標題2](./images/image-20190423125410014.png)
 
-![image-20190423125658883](/Users/Apple/Library/Application Support/typora-user-images/image-20190423125658883.png)
+![圖的標題3](./images/image-20190423125658883.png)
 
 
 
