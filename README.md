@@ -9,3 +9,5 @@
 - 要發布前：**先確定已經 commit 所有 changes 到 master**。然後跑 `./publish.sh` 這隻 script，他會自動幫你編譯然後把檔案 commit 到 gh-pages 這個分支，推到 GitHub 上面，觸發自動部署。你應該可以在 [https://vinhuang0228.github.com/notes](https://vinhuang0228.github.com/notes) 看到你的 GitBook。
 
 - 可以生成各種格式的電子書：`gitbook pdf ./ ./mybook.pdf` 或 `gitbook epub ./ ./mybook.epub` 或 `gitbook mobi ./ ./mybook.mobi`
+
+- Other question: 先 git init , 然後看`git add .` `git commit -m "新加的內容是什麼"`
