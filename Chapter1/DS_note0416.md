@@ -96,7 +96,7 @@ Testing data 不該被動到，因為正常model的data是未知的，不能調�
 
      - **Boostrap**: Bootstrapping是一种重采样技术，翻译成自助法。它通过采样技术从原始的单个数据集上产生多个新的数据集，每个新的数据集称为一个bootstrapped dataset，并且每个新的数据集大小与原始数据集大小相等。这样，每个新的数据集都可以用来对模型进行评价，从而可以得到多个评价值，进一步可以得到评价方差与置信区间
 
-     - **ROC CURVE** (Receiver OperatingCharacteristics): 曲線下的面積是精準度的衡量，越接近對角線（即區域越接近0.5），模型越不准確，縱軸表示真正的正確率，橫軸代表誤報率，該圖還顯示了對角線，具有完美精度的模型將具有1的面積![image-20190423115424319](/Users/Apple/Library/Application Support/typora-user-images/image-20190423115424319.png)
+     - **ROC CURVE** (Receiver OperatingCharacteristics): 曲線下的面積是精準度的衡量，越接近對角線（即區域越接近0.5），模型越不准確，縱軸表示真正的正確率，橫軸代表誤報率，該圖還顯示了對角線，具有完美精度的模型將具有1的面積![image-20190423115424319](images/image-20190423115424319.png)
 
      - 
 

@@ -10,5 +10,6 @@
 
 - 可以生成各種格式的電子書：`gitbook pdf ./ ./mybook.pdf` 或 `gitbook epub ./ ./mybook.epub` 或 `gitbook mobi ./ ./mybook.mobi`
 
-- Other question: 先 git init , 然後看`git add .` `git commit -m "新加的內容是什麼"`,最後 `git push` `./publish.sh`.
+- Other question: 先 `git add .` `git commit -m "新加的內容是什麼"`,最後 `git push` `./publish.sh`.
+
 - 注意圖檔路徑要標好，直接貼上無法顯示，要抓 typora 的圖檔放到 dir 內， `cd /Users/Apple/Library/Application\ Support/typora-user-images` , `cp * /Users/Apple/Desktop/`, 再放到目的設好的資料夾內。
