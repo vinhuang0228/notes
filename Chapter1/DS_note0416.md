@@ -55,7 +55,7 @@ Testing data 不該被動到，因為正常model的data是未知的，不能調�
 
 3. #### 評價模型
 
-   - [ ] ##### 用confusion metrics、precision、recall等等
+   - ##### 用confusion metrics、precision、recall等等	
 
      |                     | Predicted as Positive | Predicted as Negative |      |
      | ------------------- | --------------------- | --------------------- | ---- |
@@ -73,19 +73,16 @@ Testing data 不該被動到，因為正常model的data是未知的，不能調�
      - **Sensitivity**: True Positive recognition rate   **Sensitivity = TP/P** 
 
      - **Specificity**: True Negative recognition rate   **Specificity = TN/N** 
-
      - **Precision** :被猜成是positive的有多少比例真的是positive **Precision = TP/ TP+FP**
-
      - **Recall** :真的是positive的有多少比例被猜成是positive **Recall = TP/P = Sensitivity **
 
-       > Perfect score is 1.0 for Precision and Recall
-       >
-       > 全部都猜p，但根本不精準，所以精確跟recall都要考慮
+     > Perfect score is 1.0 for Precision and Recall
+     >
+     > 全部都猜p，但根本不精準，所以精確跟recall都要考慮
 
-   
+     
 
-   - [ ] ##### Holdout & Cross Validation
-
+   - ##### Holdout & Cross Validation
      - **Holdout**: 將原始數據劃分成兩部分，大個做training，小的當test set
 
      - **Cross** : 劃分成k部分，每次疊代中，將k-1做training（k通常是10），剩下一個做test，接著重複k次，直到每個部分都做過test，得到k個評價指標，再計算平均值。
@@ -98,16 +95,12 @@ Testing data 不該被動到，因為正常model的data是未知的，不能調�
 
      - **ROC CURVE** (Receiver OperatingCharacteristics): 曲線下的面積是精準度的衡量，越接近對角線（即區域越接近0.5），模型越不准確，縱軸表示真正的正確率，橫軸代表誤報率，該圖還顯示了對角線，具有完美精度的模型將具有1的面積![image-20190423115424319](images/image-20190423115424319.png)
 
-     - 
+     
 
-   
 
    > classification p.136 table
    >
    > <https://blog.csdn.net/heyongluoyao8/article/details/49408319>
-
-4. 
-
 
 
 
@@ -116,11 +109,11 @@ Testing data 不該被動到，因為正常model的data是未知的，不能調�
 
 #### 3.1 過適 (overfitting)
 
-#### 知識發掘的方法在建立模型的過程中容易出現過適的情形，模型可能陷入只能解釋在訓練集樣本的關聯，而沒辦法一體適用。也就是說，機器學習所學到的假設(Hypothesis)過度貼近訓練資料(Training Data)，而導致測試資料(Testing Data)錯誤率變得更大。
+知識發掘的方法在建立模型的過程中容易出現過適的情形，模型可能陷入只能解釋在訓練集樣本的關聯，而沒辦法一體適用。也就是說，機器學習所學到的假設(Hypothesis)過度貼近訓練資料(Training Data)，而導致測試資料(Testing Data)錯誤率變得更大。
 
-#### 一個荒謬的模型模型只要足夠複雜，是可以完美地適應訓練資料。過適一般可以識為違反奧卡姆剃刀原則。為了避免過適現象，須要使用額外的技巧(如交叉驗證、early stopping、貝斯信息量準則、赤池信息量準則或model comparison)以指出何時會有更多訓練而沒有導致更好的一般化。
+一個荒謬的模型模型只要足夠複雜，是可以完美地適應訓練資料。過適一般可以識為違反奧卡姆剃刀原則。為了避免過適現象，須要使用額外的技巧(如交叉驗證、early stopping、貝斯信息量準則、赤池信息量準則或model comparison)以指出何時會有更多訓練而沒有導致更好的一般化。
 
-#### 奧卡姆剃刀原則 : 若無必要，勿增實體。如果對於同一現象有兩種不同的假說，我們應該採取比較簡單的那一種。
+奧卡姆剃刀原則 : 若無必要，勿增實體。如果對於同一現象有兩種不同的假說，我們應該採取比較簡單的那一種。
 
 -------------
 
@@ -196,6 +189,6 @@ Kernel trick在機器學習的角色就是希望當不同類別的資料在原�
 
 
 
-**非監督式學習?** 就是你得到的資料你沒有任何Ground truth，你只有資料本身。*
+**非監督式學習?** 就是你得到的資料你沒有任何Ground truth，你只有資料本身。
 
 K-means Clustering這個方法概念很簡單，一個概念「物以類聚」。男生就是男生，女生就是女生，男生會自己聚成一群，女生也會自己聚成一群。
