@@ -42,7 +42,7 @@ http://www.cs.nthu.edu.tw/~nfhuang/contents.htm
 
 - ##### What is a real-time operating system?
 
-  ​ Performing the task in accordance with deadlines in its (external real-world) environment.
+   Performing the task in accordance with deadlines in its (external real-world) environment.
 
 - ##### What is the role of the user interface of an operating system?
 
@@ -86,15 +86,19 @@ write a recurrence relation show how many different schedules for these n proces
 
 ### 網路：
 
-- #### ECC(error correction code) -hamming code
+- #### ECC(error correction code) 
 
-  [https://medium.com/@gordonfang_85054/漢明碼介紹-hamming-code-intro-1c6669f0cff0](https://medium.com/@gordonfang_85054/漢明碼介紹-hamming-code-intro-1c6669f0cff0)
+  - ##### [hamming code](https://medium.com/@gordonfang_85054/漢明碼介紹-hamming-code-intro-1c6669f0cff0)
+  
+  
 
 * #### 網路分層
 
-  https://giboss.pixnet.net/blog/post/26798748
+  架構參考: 
 
-  https://www.techbang.com/posts/15859-network-architecture-2-arpanet-history-and-introduction-to-mac-ip-dns-concepts-review?page=2
+  [1](https://giboss.pixnet.net/blog/post/26798748)  ,  [2](https://www.techbang.com/posts/15859-network-architecture-2-arpanet-history-and-introduction-to-mac-ip-dns-concepts-review?page=2
+
+  ) 
 
   [分層例題](https://quizlet.com/nl/334549754/networks-flash-cards/)
 
@@ -113,56 +117,49 @@ write a recurrence relation show how many different schedules for these n proces
   TCP 這個協定最主要的特色在於傳輸資料時，需要驗證資料，確保正確性。所以花的時間稍多一點。
   而 UDP 這個協定最主要的特色在於傳輸資料時，不需要驗證資料，不保證正確性，所以比較省時間。而一般來說，像是多媒體串流(streaming)就是使用這種協定。
 
-  ​ TCP 跟 UDP 都是網路封包傳送的方式,而網路在傳輸過程中,為了有效使用網路資源,避免過大封包沒傳完,而導致後方所有封包都不能傳送,故所有封包在傳送時都會被分割成小封包,然後在接收端重新組合,而採用 TCP 傳送封包,在接收端會檢查是否所有封包都完整接收到,如果有幾個封包在傳送過程中掉了,接收端會要求傳送端重送,故 TCP 方式傳送可確保封包完整,但唯一缺點是,相對於 UCP,它傳送時間可能會比較久;反之,UDP 在接收端沒有檢查機制,故用 UDP 傳送的小封包,有可能會不見而不被發現,一般 TCP 會被用在比較需要完整性的 protocol 如 email,而 UDP 則用在只求速度,對完整性要求不高,如 syslog 上.
+   TCP 跟 UDP 都是網路封包傳送的方式,而網路在傳輸過程中,為了有效使用網路資源,避免過大封包沒傳完,而導致後方所有封包都不能傳送,故所有封包在傳送時都會被分割成小封包,然後在接收端重新組合,而採用 TCP 傳送封包,在接收端會檢查是否所有封包都完整接收到,如果有幾個封包在傳送過程中掉了,接收端會要求傳送端重送,故 TCP 方式傳送可確保封包完整,但唯一缺點是,相對於 UCP,它傳送時間可能會比較久;反之,UDP 在接收端沒有檢查機制,故用 UDP 傳送的小封包,有可能會不見而不被發現,一般 TCP 會被用在比較需要完整性的 protocol 如 email,而 UDP 則用在只求速度,對完整性要求不高,如 syslog 上.
 
-  ​ TCP 提供的是一個連線導向(Connection Oriented)的可靠傳輸， 而 UDP 則是一個非連線型(Connectionless)的非可靠傳輸協定，它並不會運用確認機制來保證資料是否正確的被接收、不需要重傳遺失的資料、資料的接收可不必按順序進行、也不提供回傳機制來控制資料流的速度。因此， UDP 信息可能會在網路傳送過程中遺失、重複，不過速度也可能比接收端的處理速度還快。對於某些訊息量較大、時效性大於可靠性的傳輸來說(像是影音類的).
+   TCP 提供的是一個連線導向(Connection Oriented)的可靠傳輸， 而 UDP 則是一個非連線型(Connectionless)的非可靠傳輸協定，它並不會運用確認機制來保證資料是否正確的被接收、不需要重傳遺失的資料、資料的接收可不必按順序進行、也不提供回傳機制來控制資料流的速度。因此， UDP 信息可能會在網路傳送過程中遺失、重複，不過速度也可能比接收端的處理速度還快。對於某些訊息量較大、時效性大於可靠性的傳輸來說(像是影音類的).
 
 * #### Unicast / Multicast / Broadcast
 
-  https://blog.csdn.net/xiaopangzi313/article/details/12831705
+  * [Link 1](https://blog.csdn.net/xiaopangzi313/article/details/12831705)  , [Link 2](http://belkin1053.blogspot.com/2011/12/unicastbroadcastmulticast.html)
 
-  http://belkin1053.blogspot.com/2011/12/unicastbroadcastmulticast.html
+  
+  
+  
 
 ---
 
 ### Tuning machine
 
-圖靈機原理講解：
-https://zh-tw.coursera.org/lecture/jisuanji-biancheng/tu-ling-ji-de-yun-xing-ji-li-xiTdw
+原理講解 ＆ Book 12.2
 
-[https://blog.xuite.net/wellsli/002/32646708-計算機理論的始祖---圖靈機](https://blog.xuite.net/wellsli/002/32646708-計算機理論的始祖---圖靈機)
+[Link 1](https://zh-tw.coursera.org/lecture/jisuanji-biancheng/tu-ling-ji-de-yun-xing-ji-li-xiTdw)  , [Link 2](https://blog.xuite.net/wellsli/002/32646708-計算機理論的始祖---圖靈機)  , [Link 3](https://mropengate.blogspot.com/2015/05/formal-language-ch9-turing-machines.html) 
 
-https://mropengate.blogspot.com/2015/05/formal-language-ch9-turing-machines.html
 
-##### diagram
+
+##### diagram:     [Source](https://deepai.org/machine-learning-glossary-and-terms/turing-machine)
 
 ![](https://images.deepai.org/django-summernote/2019-04-19/f28b1820-f2d6-4fce-b10e-72f678fbbbb5.jpg)
 
-https://deepai.org/machine-learning-glossary-and-terms/turing-machine
 
----
 
 ---
 
 ### Production system
 
-https://blog.csdn.net/embattle/article/details/80074859
+[Intoduction](https://blog.csdn.net/embattle/article/details/80074859)
 
-##### water fill problem:
+##### water fill [problem](http://problemsandsolutionsforai.blogspot.com/2013/06/water-jug-problem.html):
 
-https://www.youtube.com/watch?v=u9KMMudAQ6M
+- [Video](https://www.youtube.com/watch?v=u9KMMudAQ6M)
 
-http://problemsandsolutionsforai.blogspot.com/2013/06/water-jug-problem.html
+##### chart: [like tree](https://www.ques10.com/p/30407/explain-water-jug-problem-with-state-space-search-/)
 
-##### chart: like tree
+##### [Farmer](https://stackoverflow.com/questions/29643894/the-classic-farmer-wolf-goat-cabbage-production-system-construction):
 
-https://www.ques10.com/p/30407/explain-water-jug-problem-with-state-space-search-/
-
-##### Farmer:
-
-https://stackoverflow.com/questions/29643894/the-classic-farmer-wolf-goat-cabbage-production-system-construction
-
-https://www.cs.unm.edu/~luger/ai-final2/CH4_Depth-.%20Breadth-,%20and%20Best-first%20Search.pdf
+- [BFS](https://www.cs.unm.edu/~luger/ai-final2/CH4_Depth-.%20Breadth-,%20and%20Best-first%20Search.pdf)
 
 ---
 
@@ -204,7 +201,7 @@ https://www.cs.unm.edu/~luger/ai-final2/CH4_Depth-.%20Breadth-,%20and%20Best-fir
 
 - #### [Fib(n) recursive modified](https://openhome.cc/Gossip/AlgorithmGossip/FibonacciNumber.htm#Python)
 
-  https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
+  [Code](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) 
 
 - #### 2's / 3's [complement](http://homepage.divms.uiowa.edu/~jones/ternary/numbers.shtml)
 
@@ -234,9 +231,9 @@ https://www.cs.unm.edu/~luger/ai-final2/CH4_Depth-.%20Breadth-,%20and%20Best-fir
 
   **while** ∃ leaves in _G_
 
-  ​ Add all parents to _C_
+   Add all parents to _C_
 
-  ​ Remove all leaves and their parents from _G_
+   Remove all leaves and their parents from _G_
 
   **return** _C_
 
