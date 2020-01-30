@@ -96,9 +96,7 @@ write a recurrence relation show how many different schedules for these n proces
 
   架構參考: 
 
-  [1](https://giboss.pixnet.net/blog/post/26798748)  ,  [2](https://www.techbang.com/posts/15859-network-architecture-2-arpanet-history-and-introduction-to-mac-ip-dns-concepts-review?page=2
-
-  ) 
+  [1](https://giboss.pixnet.net/blog/post/26798748)  ,  [2](https://www.techbang.com/posts/15859-network-architecture-2-arpanet-history-and-introduction-to-mac-ip-dns-concepts-review?page=2) 
 
   [分層例題](https://quizlet.com/nl/334549754/networks-flash-cards/)
 
@@ -203,11 +201,15 @@ write a recurrence relation show how many different schedules for these n proces
 
   [Code](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/) 
 
+  
+
 - #### 2's / 3's [complement](http://homepage.divms.uiowa.edu/~jones/ternary/numbers.shtml)
 
   The negate operation for 3's complement ternary numbers is analogous to the familiar negate operation on 2's complement binary numbers. To negate a 3's complement number, first take the 2's complement of each trit by subtracting it from 2, and then add one to the resulting number. Thus, the 3's complement of 000 is 222+1 or 000, and the three's complement of 111 (representing positive 13) is 111+1 or 112 (representing -13). Unlike the binary system, all ternary numbers have 3's complements because the number range is entirely symmetrical around zero.
 
   ![image-20200128173220999](images/image-20200128173220999.png)
+
+  
 
 - #### Why is Prim's the best for dense graph & Kruskal's for sparse graph?
 
@@ -218,6 +220,8 @@ write a recurrence relation show how many different schedules for these n proces
   In case of dense graphs, for example when 𝑚=𝜔(𝑛log(𝑛)), prim’s algorithm runs in 𝑂(𝑚), faster than that of kruskal’s which is 𝑂(𝑚log(𝑛)).
 
   For sparse graphs, say where 𝑚=𝑂(𝑛), we have prim’s running in 𝑂(𝑛log(𝑛)) while kruskal’s running in 𝑂(𝑛log(𝑛)).
+
+  
 
 - #### minimum vertex cover of a tree
 
@@ -239,16 +243,22 @@ write a recurrence relation show how many different schedules for these n proces
 
   ![image-20200127113636083](images/image-20200127113636083.png)
 
+  
+
 - #### Euler path
 
-  https://www.csie.ntu.edu.tw/~sprout/algo2017/ppt_pdf/euler_hamilton.pdf
+  [euler_hamilton](https://www.csie.ntu.edu.tw/~sprout/algo2017/ppt_pdf/euler_hamilton.pdf)
+
+
 
 * #### Design an algorithm for reversing two adjacent entries on one of the stacks.
 
   Move above to another
   Move adjacent entries then place in reverse order, then retrieve all to the original orders
 
-  by https://quizlet.com/30852691/chapter-8-flash-cards/
+  by [here](https://quizlet.com/30852691/chapter-8-flash-cards/)
+
+  
 
 * #### a regular BST
 
@@ -285,9 +295,9 @@ write a recurrence relation show how many different schedules for these n proces
 
     ##### [來複習一下資料結構 - Priority Queue](http://blog.lance.tw/posts/2014/07/26/basic-data-structure-priority-queue/)
 
-* #### 106. 2. bit pattern, 16-bit machine
+* #### 106. 2. bit pattern, 
 
-  https://www.csie.ntu.edu.tw/~r03944025/intro2015/files/hw/hw2_ans.pdf
+  16-bit machine [參考作業](https://www.csie.ntu.edu.tw/~r03944025/intro2015/files/hw/hw2_ans.pdf)
 
 ---
 
